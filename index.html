@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./c2-assets/veg-icon.jpg" type="image/x-icon">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- DaisyUI + tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NATURE'S PLATTER</title>
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+    </style>
+    <!-- tailwind script -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'dark2': '#111111',
+             }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="font-sora bg-[#FFFFFF]">
+  <header class="">
+  <!-- nav section -->
+    <div class="navbar py-5 lg:px-20 border border-black">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a class="font-dark2">Product</a></li>
+                <li><a class="font-dark2">Services</a></li>
+                <li><a class="font-dark2">Contact us</a></li>
+          </ul>
+        </div>
+        <img src="./c2-assets/logo-header.png" alt="" class="w-28 border border-dashed border-gray-300">
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="font-dark2">Product</a></li>
+          <li><a class="font-dark2">Services</a></li>
+          <li><a class="font-dark2">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end space-x-4 invisible lg:visible">
+        <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+        <i class="fa-solid fa-cart-shopping text-gray-500"></i>
+        <button class="btn btn-outline btn-success text-black px-6">Login</button>
+      </div>
+      <div class="ml-4">
+        <a class="btn bg-[#179800] text-white px-9">Register</a>
+      </div>
+    </div>
+
+    <!-- banner section -->
+     <div class="section-banner text-center pt-14 space-y-4">
+      <h1 class="banner-title font-semibold text-3xl">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+      <p class="banner-content font-normal text-xs text-gray-600">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+      <img src="./c2-assets/hero-vegetables.png" alt="" class="w-[600px] h-[500px] mx-auto mt-10 border border-dashed border-gray-400 ">
+     </div>
+  </header>
+    
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/cffcbee330.js" crossorigin="anonymous"></script>
+</body>
+</html>
