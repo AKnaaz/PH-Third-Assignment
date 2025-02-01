@@ -16,6 +16,16 @@
         .font-sora{
             font-family: "Sora", serif;
         }
+        .banner-img{
+          animation-name: example;
+          animation-duration: 2s;
+          position: relative;
+          animation-iteration-count: infinite;
+        }  
+  @keyframes example {
+  0%   {background-color:#179800; left:300px; right:1000px;}
+  100% {background-color:#bdceba; left:1000px; right:1366px;}
+  }
     </style>
     <!-- tailwind script -->
     <script>
@@ -82,8 +92,8 @@
      <section class="banner text-center pt-14 space-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
       <h1 class="banner-title font-semibold text-3xl">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
       <p class="banner-content font-normal text-xs text-gray-600">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
-      <i class="fa-solid fa-arrow-down animate-bounce w-8 h-8 text-[#179800]"></i>
-      <img src="./c2-assets/hero-vegetables.png" alt="" class="w-[600px] h-[500px] mx-auto mt-10 border border-dashed border-gray-400 ">
+      <div class="uppercase w-20 h-20 rounded-full flex items-center justify-center font-normal text-white banner-img">fresh food</div>
+      <img src="./c2-assets/hero-vegetables.png" alt="" class=" w-[600px] h-[500px] mx-auto mt-10 border border-dashed border-gray-400 ">
      </section>
   </header>
 
@@ -154,7 +164,7 @@
             <figure>
               <img
                 src="./c2-assets/vegetable-offer.png"
-                alt="vegetable" class="w-48 relative left-16 bottom-0"/>
+                alt="vegetable" class="lg:w-48 relative lg:left-16 left-32 bottom-0"/>
             </figure>
           </div>
       </div>
@@ -194,7 +204,7 @@
           </div>
           <div class="card-body">
             <h4 class="text-xs font-normal"><i class="fa-solid fa-star text-amber-600"></i> 4.5</h4>
-            <h2 class="card-title text-sm font-medium">Onion 1 KG</h2>
+            <h2 class="card-title text-sm font-medium">Potato 1 KG</h2>
             <h4 class="text-xs font-normal">$39.99</h4>
           </div>
         </div>
@@ -207,7 +217,7 @@
           </div>
           <div class="card-body">
             <h4 class="text-xs font-normal"><i class="fa-solid fa-star text-amber-600"></i> 4.5</h4>
-            <h2 class="card-title text-sm font-medium">Onion 1 KG</h2>
+            <h2 class="card-title text-sm font-medium">Tomato 1 KG</h2>
             <h4 class="text-xs font-normal">$39.99</h4>
           </div>
         </div>
@@ -233,7 +243,7 @@
           </div>
           <div class="card-body">
             <h4 class="text-xs font-normal"><i class="fa-solid fa-star text-amber-600"></i> 4.5</h4>
-            <h2 class="card-title text-sm font-medium">Onion 1 KG</h2>
+            <h2 class="card-title text-sm font-medium">Tomato 1 KG</h2>
             <h4 class="text-xs font-normal">$39.99</h4>
           </div>
         </div>
@@ -259,15 +269,15 @@
           </div>
           <div class="card-body">
             <h4 class="text-xs font-normal"><i class="fa-solid fa-star text-amber-600"></i> 4.5</h4>
-            <h2 class="card-title text-sm font-medium">Onion 1 KG</h2>
+            <h2 class="card-title text-sm font-medium">Potato 1 KG</h2>
             <h4 class="text-xs font-normal">$39.99</h4>
           </div>
         </div>
 
-        <div class="shadow-xl bg-white flex items-center rounded-lg w-[220px] h-[100px] invisible lg:visible">
+        <div class="shadow-xl bg-white flex items-center rounded-lg lg:w-[220px] lg:h-[100px] invisible lg:visible">
           <div class="w-[50px] h-[50px] bg-[#EFEBE3] ml-2 my-2 rounded-lg">
             <img
-              src="./c2-assets/onoin.webp"
+              src="./c2-assets/potato.png"
               alt="vegetable" />
             </div>
           <div class="card-body">
@@ -314,8 +324,116 @@
 
       </div>
     </section>
+
+    <!-- review -->
+     <section class="review px-5 py-10 lg:p-20">
+      <div class="review-title text-[#179800] font-semibold text-2xl">Review</div>
+        <div class="review-card mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5">
+
+          <div class="card shadow-xl bg-[#EFEBE3] pt-4">
+            <figure class="py-10 w-32 h-32 mx-auto rounded-full bg-white">
+              <img
+                src="./c2-assets/woman.webp"
+                alt="review"/>
+            </figure>
+            <div class="text-center text-amber-600 mt-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title font-bold text-base">Sandy Brown</h2>
+              <p class="text-xs">I'v got my order just in time before new <br> years eve. Every item was carefully wrapped,<br> jars were wrapped in bubble wrap. Thanks for your good work.</p>
+            </div>
+          </div>
+
+          
+          <div class="card shadow-xl bg-[#EFEBE3] pt-4">
+            <figure class="py-10 w-32 h-32 mx-auto rounded-full bg-white">
+              <img
+                src="./c2-assets/man1.avif"
+                alt="review"/>
+            </figure>
+            <div class="text-center text-amber-600 mt-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title font-bold text-base">John Willy</h2>
+              <p class="text-xs">I'v got my order just in time before new <br> years eve. Every item was carefully wrapped, <br> jars were wrapped in bubble wrap. Thanks for your good work.</p>
+            </div>
+          </div>
+
+          
+          <div class="card shadow-xl bg-[#EFEBE3] pt-4">
+            <figure class="py-10 w-32 h-32 mx-auto rounded-full bg-white">
+              <img
+                src="./c2-assets/man2.jpg"
+                alt="review"/>
+            </figure>
+            <div class="text-center text-amber-600 mt-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title font-bold text-base">Peter Sans</h2>
+              <p class="text-xs">I'v got my order just in time before new <br> years eve. Every item was carefully wrapped, <br> jars were wrapped in bubble wrap. Thanks for your good work.</p>
+            </div>
+          </div>
+
+        </div>
+     </section>
    </main>
     
+   <!-- footer section -->
+    <footer class="bg-[#179800] pb-10 mt-56">
+      <!-- div section -->
+      <div class=" bg-[#EFEBE3] shadow-xl flex lg:flex-row flex-col items-center gap-5 p-5 lg:w-[1000px] lg:h-[400px] rounded-xl lg:mx-auto relative bottom-52 mx-5">
+        <figure class="w-[380px]">
+          <img
+            src="./c2-assets/vegetable-busket.png"
+            alt="vegetable" class="border border-dashed border-gray-400"/>
+        </figure>
+        <div class="card-body space-y-4 lg:items-start items-center">
+          <h2 class="card-title">Get Grocery News!</h2>
+          <p>Exclusive training tips, ticks, product deals and more.</p>
+          <input type="email" name="" id="" placeholder="Enter email" class="p-4 w-[400px] rounded-lg">
+          <div class="card-actions">
+            <button class="btn bg-[#179800] text-white font-normal px-6">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- main footer -->
+      <div class="footer text-base-content px-10 flex-col">
+        <div>
+          <img src="./c2-assets/logo-footer.png" alt="" class="w-28 border border-dashed border-gray-400">
+          <p class="text-white font-normal text-sm">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>friends</p>
+        </div>
+        <nav class="space-y-5">
+          <a class="link link-hover text-white">Product</a>
+          <a class="link link-hover text-white">Service</a>
+          <a class="link link-hover text-white">Contact us</a>
+        </nav>
+        <nav class="mt-16">
+          <h6 class="footer-title font-normal text-white">Follow us</h6>
+          <div class="grid grid-flow-col gap-4 text-white w-6">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </nav>
+      </div>  
+    </footer>
 
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/cffcbee330.js" crossorigin="anonymous"></script>
