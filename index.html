@@ -16,6 +16,17 @@
         .font-sora{
             font-family: "Sora", serif;
         }
+        .animation{
+            background-color: #179800;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+@keyframes example {
+  from {background-color: #179800;}
+  to {background-color: #32532c;}
+}
     </style>
     <!-- tailwind script -->
     <script>
@@ -85,7 +96,7 @@
       <div class="">
         <i class="fa-solid fa-arrow-down animate-bounce w-6 h-6 text-[#179800]"></i>
       </div>
-      <button class="text-xs px-3 border border-black">Click here</button>
+      <button class="text-xs px-3 text-white shadow-md py-2 rounded-lg animation">Click here</button>
       <img src="./c2-assets/hero-vegetables.png" alt="" class=" w-[600px] h-[500px] mx-auto mt-10 border border-dashed border-gray-400 ">
      </section>
   </header>
