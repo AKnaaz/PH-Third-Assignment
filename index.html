@@ -16,16 +16,6 @@
         .font-sora{
             font-family: "Sora", serif;
         }
-        .banner-img{
-          animation-name: example;
-          animation-duration: 2s;
-          position: relative;
-          animation-iteration-count: infinite;
-        }  
-  @keyframes example {
-  0%   {background-color:#179800; left:300px; right:1000px;}
-  100% {background-color:#bdceba; left:1000px; right:1366px;}
-  }
     </style>
     <!-- tailwind script -->
     <script>
@@ -92,7 +82,10 @@
      <section class="banner text-center pt-14 space-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
       <h1 class="banner-title font-semibold text-3xl">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
       <p class="banner-content font-normal text-xs text-gray-600">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
-      <div class="uppercase w-20 h-20 rounded-full flex items-center justify-center font-normal text-white banner-img">fresh food</div>
+      <div class="">
+        <i class="fa-solid fa-arrow-down animate-bounce w-6 h-6 text-[#179800]"></i>
+      </div>
+      <button class="text-xs px-3 border border-black">Click here</button>
       <img src="./c2-assets/hero-vegetables.png" alt="" class=" w-[600px] h-[500px] mx-auto mt-10 border border-dashed border-gray-400 ">
      </section>
   </header>
